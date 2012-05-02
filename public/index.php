@@ -13,7 +13,6 @@ use Core\Controller;
 //Seta o diretorio principal da aplicação
 if(!defined('APPLICATION_PATH')) define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../app'));
 if(!defined('CORE_PATH')) define('CORE_PATH', realpath(dirname(__FILE__) . '/../core'));
-if(!defined('VIEWS_PATH')) define('VIEWS_PATH', APPLICATION_PATH . '/views');
 
 require_once APPLICATION_PATH . '/configs/config.php';
 
