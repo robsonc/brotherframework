@@ -19,4 +19,8 @@ class Controller {
 	public function getGet(){
 		return $this->get;
 	}
+
+	public function loadModel($domainModel){
+		require_once APPLICATION_PATH . '/domain/models/' . $domainModel . '.php';
+	}
 }
