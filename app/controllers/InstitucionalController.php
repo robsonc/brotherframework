@@ -2,12 +2,11 @@
 
 namespace Controller;
 
-use Core\Controller;
+require_once 'Controller.php';
 
-require_once CORE_PATH . '/Controller.php';
+class InstitucionalController extends \Core\Controller {
 
-class InstitucionalController extends Controller {
-
+	public $view = 'institucional';
 	public $user;
 
 	public function __construct(){
@@ -17,12 +16,6 @@ class InstitucionalController extends Controller {
 	}
 
 	public function indexAction(){
-		
-		$title = 'Institucional';
-
-		$this->user->setUsername('robsoncoutinho');
-
-		include APPLICATION_PATH . '/views/home.php';
 
 	}
 }

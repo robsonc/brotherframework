@@ -2,12 +2,11 @@
 
 namespace Controller;
 
-use Core\Controller;
+require_once 'Controller.php';
 
-require_once CORE_PATH . '/Controller.php';
+class IndexController extends \Core\Controller {
 
-class IndexController extends Controller {
-
+	public $view = 'home';
 	public $user;
 
 	public function __construct(){
@@ -18,13 +17,8 @@ class IndexController extends Controller {
 
 	public function indexAction(){
 		
-		$title = 'Home';
-
-		$users = $this->user->getAll();
-		$robsoncoutinho = $this->user->getById(4);
-		var_dump($robsoncoutinho);
-
-		include APPLICATION_PATH . '/views/home.php';
+		$this->title = 'Home';
+		$this->users = $this->user->getAll();
 
 	}
 }

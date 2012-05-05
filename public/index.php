@@ -14,6 +14,12 @@ use Core\Controller;
 if(!defined('APPLICATION_PATH')) define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../app'));
 if(!defined('CORE_PATH')) define('CORE_PATH', realpath(dirname(__FILE__) . '/../core'));
 
+// Ensure library/ is on include_path
+set_include_path(implode(PATH_SEPARATOR, array(
+    realpath(APPLICATION_PATH . '/../core'),
+    get_include_path()
+)));
+
 require_once APPLICATION_PATH . '/configs/config.php';
 
 //retorna a url requisitada
@@ -23,6 +29,7 @@ if($url == '/'):
 	require_once APPLICATION_PATH . '/controllers/IndexController.php';
 	$controller = new \Controller\IndexController();
 	$controller->indexAction();
+	$controller->runView();
 else:
 	switch($url):
 		case '/institucional':
@@ -32,5 +39,6 @@ else:
 			require_once APPLICATION_PATH . '/controllers/' . $fileName . '.php';
 			$controller = new $className();
 			$controller->indexAction();
+			$controller->runView();
 	endswitch;
 endif;
