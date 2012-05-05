@@ -1,0 +1,47 @@
+Projeto Brother Framework
+
+Arquitetura
+
+A princípio o projeto será estruturado utilizando o padrão MVC (Model, View e Controller).
+É um padrão que utiliza uma arquitetura em camadas, para a separação da lógica.
+Basicamente existem 3 camadas, a camada de modelo responsável pela lógica de negócio (domínio),
+existe ainda a camada de visão responsável pela apresentação dos dados e a camada de controle
+responsável por receber a requisição e controlar o fluxo da informação.
+
+Estrutura de diretórios
+
+A idéia principal é manter uma estrutura de diretórios mais simplificada possível,
+uma pasta acomodar os arquivos de apresentação, outro pasta para acomodar os arquivos do domínio,
+outra para armazenar os controladores de entrada e outra pasta para armazenar as classes do framework.
+Existe ainda uma pasta que armazenará os arquivos públicos do sistema, css, js, images, etc.
+
+/app
+../controllers
+../domain
+../../models
+../views
+/core
+/public
+../css
+../js
+../images
+
+Pacotes PHP
+
+$_SERVER - Variável de sistema que contém informações do servidor e do ambiente
+Filesystem - São as extensões para manipulação do sistema de arquivos com PHP
+Other extensions / Url - Estensões para manipulação de URL
+Database extensions - PDO
+
+TODO
+
+* Criar é um autoloader para as classes
+* Criar Domain\Model padrão
+* Criar método load view
+* Adicionar pasta da biblioteca no include_path
+
+Idéias
+
+* Seria muito interessante fazer um mapeamento de metadados utilizando comentários PHP,
+assim poderíamos definir uma view padrão para um método específico e views alternativas
+dependendo da saída
