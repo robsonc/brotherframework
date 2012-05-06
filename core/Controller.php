@@ -34,6 +34,12 @@ class Controller {
 	}
 
 	public function runView(){
-		include APPLICATION_PATH . '/views/' . $this->view . '.php';
+		$fileName = APPLICATION_PATH . '/views/' . $this->view . '.php'; 
+		if(file_exists($fileName)){
+			include $fileName;
+			return true;
+		}else{
+			return false;
+		}
 	}
 }

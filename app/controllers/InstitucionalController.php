@@ -16,6 +16,6 @@ class InstitucionalController extends \Core\Controller {
 	}
 
 	public function indexAction(){
-
+		$this->list = array('Robson Coutinho', 'Eliane Mendes');
 	}
 }

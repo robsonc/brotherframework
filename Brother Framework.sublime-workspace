@@ -1,0 +1,410 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"domain",
+				"domainModel"
+			],
+			[
+				"PHP_URL_PA",
+				"PHP_URL_PATH  (constant)"
+			],
+			[
+				"define",
+				"defined"
+			],
+			[
+				"defin",
+				"define"
+			],
+			[
+				"WP_CONT",
+				"WP_CONTENT_URL"
+			],
+			[
+				"wp_enqu",
+				"wp_enqueue_style"
+			],
+			[
+				"a",
+				"agenciabrother"
+			],
+			[
+				"sin",
+				"single_post_title"
+			],
+			[
+				"lorem",
+				"lorem	Lorem ipsum"
+			],
+			[
+				"str_",
+				"str_replace"
+			],
+			[
+				"wpbrother-",
+				"wpbrother-twitter-count"
+			],
+			[
+				"wpbrother_social",
+				"wpbrother_social_media_options"
+			],
+			[
+				"wpbrother_soci",
+				"wpbrother_social_media_options"
+			],
+			[
+				"wpbrother_",
+				"wpbrother_validate_options"
+			],
+			[
+				"wpbrother_ge",
+				"wpbrother_get_page_fields"
+			],
+			[
+				"wp",
+				"wpbrother_page_fields"
+			],
+			[
+				"wpbrother",
+				"wpbrother"
+			],
+			[
+				"wpbro",
+				"wpbrother_option_name"
+			],
+			[
+				"wpbrother_face",
+				"wpbrother_facebook_options"
+			],
+			[
+				"WP",
+				"WPBROTHER_PLUGIN_PATH"
+			],
+			[
+				"wpbr",
+				"wpbrother_facebook_options"
+			],
+			[
+				"delete",
+				"delete_option"
+			],
+			[
+				"google",
+				"google_plus_options"
+			],
+			[
+				"facebo",
+				"facebook_options"
+			],
+			[
+				"opt",
+				"pinterest_options"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"brother",
+				"brother-plugin"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 173.0,
+		"selected_items":
+		[
+			[
+				"lorem",
+				"Snippet: lorem - HTML Kitchen sink"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Snippet: Throw Exception"
+			],
+			[
+				"PHP",
+				"Snippet: Throw Exception"
+			],
+			[
+				"Set Syntax: HTML",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"Set Syntax: P",
+				"Set Syntax: PHP"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 230.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/brotherframework/core/Controller.php",
+		"/C/xampp/htdocs/brotherframework/tests/core/Controller.php",
+		"/C/Documents and Settings/ROBS/Desktop/Eliane/284276_200755349974401_100001198112411_490841_2878478_n.jpg",
+		"/C/xampp/htdocs/simpletodo/index.php",
+		"/C/xampp/htdocs/simpletodo/Commands/ViewCommand.php",
+		"/C/xampp/htdocs/mercadomanager/includes/viewHelper.php",
+		"/C/xampp/htdocs/mercadomanager/index.php",
+		"/C/xampp/htdocs/mercadomanager/tests/ResultTest.php",
+		"/C/xampp/htdocs/brotherframework/tests/bootstrap.php",
+		"/C/xampp/htdocs/brotherframework/tests/phpunit.xml",
+		"/C/xampp/htdocs/brotherframework/public/docs/index.php",
+		"/C/xampp/htdocs/brotherframework/public/google-code-prettify/prettify.css",
+		"/C/xampp/htdocs/projectmanager/tests/phpunit.xml",
+		"/C/xampp/htdocs/facebookmonitor/tests/phpunit.xml",
+		"/C/xampp/htdocs/brotherframework/public/index.php",
+		"/C/Documents and Settings/ROBS/Application Data/Sublime Text 2/Packages/PHP/PHP.tmLanguage",
+		"/C/xampp/htdocs/brotherframework/public/css/style.css",
+		"/C/xampp/htdocs/brotherframework/app/views/home.php",
+		"/C/xampp/htdocs/brotherframework/app/views/header.php",
+		"/C/xampp/htdocs/brotherframework/app/views/institucional.php",
+		"/C/xampp/htdocs/brotherframework/app/views/footer.php",
+		"/C/xampp/htdocs/brotherframework/app/controllers/InstitucionalController.php",
+		"/C/xampp/htdocs/brotherframework/projeto.txt",
+		"/C/xampp/htdocs/brotherframework/app/controllers/IndexController.php",
+		"/C/xampp/htdocs/brotherframework/app/views/index.php",
+		"/C/xampp/htdocs/projectmanager/public/index.php",
+		"/C/xampp/htdocs/brotherframework/app/domain/models/User.php",
+		"/C/xampp/htdocs/brotherframework/app/configs/config.php",
+		"/C/xampp/htdocs/projectmanager/library/Bisna/Domain/Cliente.php",
+		"/C/xampp/htdocs/brotherframework/css/style.css",
+		"/C/xampp/htdocs/brotherframework/index.php",
+		"/C/xampp/htdocs/brotherframework/Brother Framework.sublime-project",
+		"/C/xampp/htdocs/brotherframework/style.css",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/footer.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/index.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/search.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/loop.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/functions.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/header.php",
+		"/C/xampp/htdocs/jackmarykay/INFECTED/index-extra.php",
+		"/C/xampp/htdocs/jackmarykay/INFECTED/freedoms.php",
+		"/C/xampp/htdocs/jackmarykay/INFECTED/3ec1b5bc02130c279bf8947dfbe62949ed4c1e90.php.INFECTED.php",
+		"/C/xampp/htdocs/jackmarykay/INFECTED/3ec1b5bc02130c279bf8947dfbe62949ed4c1e90.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance2/functions.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance2/wpv_theme/options/quick_setup.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance2/wpv_theme/shortcode_templates/price.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance2/wpv_theme/shortcode_templates/portfolio.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance2/wpv_theme/shortcode_templates/blockquote.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance2/wpv_common/admin/wpv_admin.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance2/single-standard.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance2/page.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/includes/customize-login.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/stylesheets/custom_admin.css",
+		"/C/Documents and Settings/ROBS/Desktop/index.html",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/custom-login/custom-login.css",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/includes/shortcodes.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/style.css",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/blog-template.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/404.php",
+		"/C/xampp/htdocs/performance/wp-content/themes/performance/.tmp_style.css.html51750~",
+		"/C/xampp/htdocs/performance/index.html",
+		"/C/xampp/htdocs/performance/sftp-config.json",
+		"/C/xampp/htdocs/amadeuspizzaria/wp-content/themes/therestaurant/style.css",
+		"/C/xampp/htdocs/amadeuspizzaria/wp-content/themes/amadeus/style.css",
+		"/C/xampp/htdocs/amadeuspizzaria/sftp-config.json",
+		"/C/Documents and Settings/ROBS/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C:\\xampp\\htdocs\\carmindodecampos\\blogs/style.css",
+		"/C/xampp/htdocs/carmindodecampos/C:\\xampp\\htdocs\\carmindodecampos\\blog/style.css",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/themes/index.php",
+		"/C/xampp/htdocs/carmindodecampos/sftp-config.json",
+		"/C/Documents and Settings/ROBS/Application Data/Sublime Text 2/Packages/User/sftp_servers/carmindodecampos",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/plugins/brother/brother.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/plugins/brother/uninstall.php",
+		"/C/xampp/htdocs/carmindodecampos/index.php",
+		"/C/xampp/htdocs/carmindodecampos/readme.html",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/themes/carmindo/home.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/themes/carmindo/teste.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/themes/carmindo/js/teste.js",
+		"/C/Documents and Settings/ROBS/Application Data/Sublime Text 2/Packages/Alignment/Base File.sublime-settings",
+		"/C/Documents and Settings/ROBS/Application Data/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
+		"/C/Documents and Settings/ROBS/Application Data/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/themes/carmindo/blog-template.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/plugins/brother/includes/brother-admin.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-includes/post-template.php",
+		"/C/Documents and Settings/ROBS/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Documents and Settings/ROBS/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Documents and Settings/ROBS/Application Data/Sublime Text 2/Packages/User/PHP.sublime-settings",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/plugins/brother/includes/social-buttons.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/plugins/brother/includes/functions.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/plugins/brother/includes/admin.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/themes/carmindo/single.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/plugins/brother/css/style.css",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/themes/carmindo/includes/customize-login.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/themes/carmindo/single-anunciante.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/themes/carmindo/functions.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/themes/carmindo/taxonomy-atividade.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/plugins/brother/readme.txt",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/plugins/contact-form-7/wp-contact-form-7.php",
+		"/C/xampp/htdocs/carmindodecampos/wp-content/plugins/contact-form-7/license.txt",
+		"/C/Documents and Settings/ROBS/Desktop/teste.html",
+		"/C/Documents and Settings/ROBS/Desktop/teste.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"else",
+			"import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())",
+			"robsonCoutinho",
+			"font",
+			"the_content",
+			"wpbrother_facebook_settings",
+			"count",
+			"' );"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 324.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"wp-content/themes/carmindo/",
+				"wp-content/themes/carmindo/blog-template.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Documents and Settings/ROBS/Desktop/Meus Posts/Meus Posts.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true
+}
