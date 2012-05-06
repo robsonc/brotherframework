@@ -14,5 +14,6 @@
 			<ul>
 				<li><a href="/">Principal</a></li>
 				<li><a href="/institucional">Institucional</a></li>
+				<li><a href="/joao">João</a></li>
 			</ul>
 		</nav>

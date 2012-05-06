@@ -25,12 +25,9 @@ class ControllerTest extends PHPUnit_Framework_TestCase {
 
 	public function testRunView(){
 		$this->assertTrue($this->object->runView());
-
-		$this->object->setView('default');
-		$this->assertFalse($this->object->runView());
-
-		$this->assertEquals('default', $this->object->getView());
 	}
+
+	public function 
 
 	public function testRunViewReturnString(){
 		$this->assertTrue(is_string($this->object->getView()));

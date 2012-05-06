@@ -33,6 +33,7 @@ if($url == '/'):
 else:
 	switch($url):
 		case '/institucional':
+		case '/joao':
 			$fileName = $patterns[$url];
 			$className = '\Controller\\' . $patterns[$url];
 			//var_dump($class);

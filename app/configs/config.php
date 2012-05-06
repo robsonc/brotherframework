@@ -2,7 +2,8 @@
 
 $patterns = array(
 	'/' => 'IndexController',
-	'/institucional' => 'InstitucionalController'
+	'/institucional' => 'InstitucionalController',
+	'/joao' => 'JoaoController'
 );
 
 $controllers = array(
