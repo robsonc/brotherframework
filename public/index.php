@@ -31,15 +31,11 @@ if($url == '/'):
 	$controller->indexAction();
 	$controller->runView();
 else:
-	switch($url):
-		case '/institucional':
-		case '/joao':
-			$fileName = $patterns[$url];
-			$className = '\Controller\\' . $patterns[$url];
-			//var_dump($class);
-			require_once APPLICATION_PATH . '/controllers/' . $fileName . '.php';
-			$controller = new $className();
-			$controller->indexAction();
-			$controller->runView();
-	endswitch;
+	$fileName = $patterns[$url];
+	$className = '\Controller\\' . $patterns[$url];
+	//var_dump($class);
+	require_once APPLICATION_PATH . '/controllers/' . $fileName . '.php';
+	$controller = new $className();
+	$controller->indexAction();
+	$controller->runView();
 endif;
