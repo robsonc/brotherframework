@@ -12,7 +12,6 @@ use Core\Controller;
 
 //Seta o diretorio principal da aplicação
 if(!defined('APPLICATION_PATH')) define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../app'));
-if(!defined('CORE_PATH')) define('CORE_PATH', realpath(dirname(__FILE__) . '/../core'));
 
 // Ensure library/ is on include_path
 set_include_path(implode(PATH_SEPARATOR, array(
@@ -21,19 +20,6 @@ set_include_path(implode(PATH_SEPARATOR, array(
 )));
 
 require_once APPLICATION_PATH . '/configs/config.php';
+require_once 'FrontController.php';
 
-//retorna a url requisitada
-$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-
-if($url == '/'):
-	require_once APPLICATION_PATH . '/controllers/IndexController.php';
-	$controller = new \Controller\IndexController();
-else:
-	$fileName = $patterns[$url];
-	$className = '\Controller\\' . $patterns[$url];
-	require_once APPLICATION_PATH . '/controllers/' . $fileName . '.php';
-	$controller = new $className();
-endif;
-
-$controller->indexAction();
-$controller->runView();
+\Core\FrontController::run($patterns);
