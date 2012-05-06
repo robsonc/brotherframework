@@ -22,4 +22,5 @@ set_include_path(implode(PATH_SEPARATOR, array(
 require_once APPLICATION_PATH . '/configs/config.php';
 require_once 'FrontController.php';
 
-\Core\FrontController::run($config);
+$frontController = new \Core\FrontController($configs);
+$frontController->run();

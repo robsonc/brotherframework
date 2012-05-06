@@ -1,6 +1,6 @@
 <?php
 
-$config['patterns'] = array(
+$configs['patterns'] = array(
 	'/' => 'IndexController',
 	'/institucional' => 'InstitucionalController',
 	'/joao' => 'JoaoController'

@@ -4,7 +4,13 @@ namespace Core;
 
 class FrontController {
 
-	public static function run($config){
+	private $configs = array();
+
+	public function __construct($configs){
+		$this->configs = $configs;
+	}
+
+	public function run(){
 		//retorna a url requisitada
 		$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
@@ -12,8 +18,8 @@ class FrontController {
 			require_once APPLICATION_PATH . '/controllers/IndexController.php';
 			$controller = new \Controller\IndexController();
 		else:
-			$fileName = $config['patterns'][$url];
-			$className = '\Controller\\' . $config['patterns'][$url];
+			$fileName = $this->configs['patterns'][$url];
+			$className = '\Controller\\' . $this->configs['patterns'][$url];
 			require_once APPLICATION_PATH . '/controllers/' . $fileName . '.php';
 			$controller = new $className();
 		endif;
