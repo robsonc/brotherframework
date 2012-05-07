@@ -24,18 +24,18 @@ class FrontController {
 		if(!array_key_exists($url, $this->configs['patterns']))
 			throw new \Core\Exception("404 Page Not Found");
 
-		$fileName = $this->configs['patterns'][$url];
-		$filePath = APPLICATION_PATH . '/controllers/' . $fileName . '.php';
-		$className = '\Controller\\' . $fileName;
+		$controllerFileName = $this->configs['patterns'][$url];
+		$controllerFilePath = APPLICATION_PATH . '/controllers/' . $controllerFileName . '.php';
+		$controllerClassName = '\Controller\\' . $controllerFileName;
 
 
-		if(!file_exists($filePath))
-			throw new \Core\Exception($className . " Application Controller Not Found");
+		if(!file_exists($controllerFilePath))
+			throw new \Core\Exception($controllerClassName . " Application Controller Not Found");
 
-		require_once $filePath;
-		$controller = new $className();
-		$controller->indexAction();
-		$controller->runView();
+		require_once $controllerFilePath;
+		$actionController = new $controllerClassName();
+		$actionController->indexAction();
+		$actionController->runView();
 		
 	}
 }
