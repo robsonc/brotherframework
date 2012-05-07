@@ -3,7 +3,8 @@
 $configs['patterns'] = array(
 	'/' => 'IndexController',
 	'/institucional' => 'InstitucionalController',
-	'/joao' => 'JoaoController'
+	'/joao' => 'JoaoController',
+	'/contato' => 'ContatoController'
 );
 
 $pdo = new \PDO("mysql:host=localhost;dbname=brotherframework", 'root', '');

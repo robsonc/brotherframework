@@ -23,4 +23,8 @@ require_once APPLICATION_PATH . '/configs/config.php';
 require_once 'FrontController.php';
 
 $frontController = new \Core\FrontController($configs);
-$frontController->run();
+try{
+	$frontController->run();
+}catch(Exception $e){
+	echo $e->getMessage();
+}
