@@ -21,18 +21,18 @@ class FrontController {
 		$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 		//se não existir na configuração de padrões
-		if(!array_key_exists($url, $this->configs['patterns'])):
-			$fileName = APPLICATION_PATH . '/controllers/ErrorController.php';
-			$className = '\Controller\ErrorController';
-		else:
-			$fileName = APPLICATION_PATH . '/controllers/' . $this->configs['patterns'][$url] . '.php';
-			$className = '\Controller\\' . $this->configs['patterns'][$url];
-		endif;
+		if(!array_key_exists($url, $this->configs['patterns']))
+			throw new \Core\Exception("404 Page Not Found");
 
-		if(!file_exists($fileName))
-			throw new \Core\Exception($fileName . " file not exist");
+		$fileName = $this->configs['patterns'][$url];
+		$filePath = APPLICATION_PATH . '/controllers/' . $fileName . '.php';
+		$className = '\Controller\\' . $fileName;
 
-		require_once $fileName;
+
+		if(!file_exists($filePath))
+			throw new \Core\Exception($className . " Application Controller Not Found");
+
+		require_once $filePath;
 		$controller = new $className();
 		$controller->indexAction();
 		$controller->runView();

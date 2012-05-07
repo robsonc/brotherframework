@@ -26,5 +26,11 @@ $frontController = new \Core\FrontController($configs);
 try{
 	$frontController->run();
 }catch(Exception $e){
-	echo $e->getMessage();
+	$fileName = APPLICATION_PATH . '/controllers/ErrorController.php';
+	$className = '\Controller\ErrorController';
+	require_once $fileName;
+	$controller = new $className();
+	$controller->setMessage($e->getMessage());
+	$controller->indexAction();
+	$controller->runView();
 }
