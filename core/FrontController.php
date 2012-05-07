@@ -11,31 +11,40 @@ require_once 'Exception.php';
 class FrontController {
 
 	private $configs = array();
+	private $url;
 
 	public function __construct($configs){
 		$this->configs = $configs;
+		//retorna a url requisitada
+		$this->url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 	}
 
 	public function run(){
-		//retorna a url requisitada
-		$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 		//se não existir na configuração de padrões
-		if(!array_key_exists($url, $this->configs['patterns']))
+		if(!array_key_exists($this->url, $this->configs['patterns']))
 			throw new \Core\Exception("404 Page Not Found");
 
-		$controllerFileName = $this->configs['patterns'][$url];
-		$controllerFilePath = APPLICATION_PATH . '/controllers/' . $controllerFileName . '.php';
-		$controllerClassName = '\Controller\\' . $controllerFileName;
+		if(!file_exists($this->_getControllerFilePath()))
+			throw new \Core\Exception($this->_getControllerClassName() . " Application Controller Not Found");
 
-
-		if(!file_exists($controllerFilePath))
-			throw new \Core\Exception($controllerClassName . " Application Controller Not Found");
-
-		require_once $controllerFilePath;
-		$actionController = new $controllerClassName();
+		require_once $this->_getControllerFilePath();
+		$refClass = new \ReflectionClass($this->_getControllerClassName());
+		$actionController = $refClass->newInstance();
 		$actionController->indexAction();
 		$actionController->runView();
 		
+	}
+
+	private function _getControllerFileName(){
+		return $this->configs['patterns'][$this->url];
+	}
+
+	private function _getControllerFilePath(){
+		return APPLICATION_PATH . '/controllers/' . $this->_getControllerFileName() . '.php';
+	}
+
+	private function _getControllerClassName(){
+		return $controllerClassName = '\Controller\\' . $this->_getControllerFileName();
 	}
 }
