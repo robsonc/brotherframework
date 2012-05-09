@@ -1,10 +1,19 @@
 <phpunit bootstrap="./bootstrap.php">
     
     <testsuites>
-        <testsuite name="Library Test Suite">
+        <testsuite name="Library_Test_Suite">
             <directory suffix=".php">./core</directory>
         </testsuite>
+        <testsuite name="Application_Test_Suite">
+            <directory suffix=".php">./app</directory>
+        </testsuite>
     </testsuites>
+
+    <logging>
+        <log type="coverage-html" target="./tmp/report" charset="UTF-8"
+        yui="true" highlight="false" lowerUpperBound="35" highLowerBound="70" />
+        <log type="testdox-html" target="./tmp/testdox.html"/>
+    </logging>
     
     <filter>
         <!-- If Zend Framework is inside your project's library, uncomment this filter -->

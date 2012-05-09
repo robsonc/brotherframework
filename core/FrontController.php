@@ -21,30 +21,42 @@ class FrontController {
 
 	public function run(){
 
-		//se não existir na configuração de padrões
-		if(!array_key_exists($this->url, $this->configs['patterns']))
-			throw new \Core\Exception("404 Page Not Found");
-
 		if(!file_exists($this->_getControllerFilePath()))
-			throw new \Core\Exception($this->_getControllerClassName() . " Application Controller Not Found");
+			throw new \Core\Exception("Error 404 Page Not Found");
 
+		$this->_runController();
+
+	}
+
+	private function _runController(){
+		
 		require_once $this->_getControllerFilePath();
 		$refClass = new \ReflectionClass($this->_getControllerClassName());
 		$actionController = $refClass->newInstance();
 		$actionController->indexAction();
 		$actionController->runView();
-		
+
 	}
 
 	private function _getControllerFileName(){
-		return $this->configs['patterns'][$this->url];
+		if($this->url !== '/')
+			$fileName = ucfirst(substr($this->url, 1)) . 'Controller';
+		else
+			$fileName = 'IndexController';
+
+		return $fileName;
+	
 	}
 
 	private function _getControllerFilePath(){
+	
 		return APPLICATION_PATH . '/controllers/' . $this->_getControllerFileName() . '.php';
+	
 	}
 
 	private function _getControllerClassName(){
+	
 		return $controllerClassName = '\Controller\\' . $this->_getControllerFileName();
+	
 	}
 }

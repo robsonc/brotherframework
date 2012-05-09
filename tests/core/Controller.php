@@ -23,11 +23,37 @@ class ControllerTest extends PHPUnit_Framework_TestCase {
 		$this->assertEquals('index', $this->object->getView());
 	}
 
-	public function testRunView(){
-		$this->assertTrue($this->object->runView());
+	public function testSuccessRunView(){
+		$this->object->runView();
 	}
 
-	public function testRunViewReturnString(){
+	/**
+	 * @expectedException \Core\Exception
+	 */
+	public function testRunViewLaunchException(){
+		$this->object->setView('entao');
+		$this->assertFalse($this->object->runView());
+	}
+
+	public function testGetViewReturnString(){
 		$this->assertTrue(is_string($this->object->getView()));
+	}
+
+	public function testSetView(){
+		$this->object->setView('home');
+		$this->assertEquals('home', $this->object->getView());
+	}
+
+	public function testSuccessLoadModel(){
+		$this->object->loadModel('User');
+		$user = new \Domain\Model\User();
+		$this->assertInstanceOf('\Domain\Model\User', $user);
+	}
+
+	/**
+	 * @expectedException \Core\Exception
+	 */
+	public function testLoadModelLaunchException(){
+		$this->object->loadModel('Usuario');
 	}
 }

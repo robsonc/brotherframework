@@ -2,6 +2,8 @@
 
 namespace Core;
 
+require_once 'Exception.php';
+
 class Controller {
 	
 	protected $view = 'index';
@@ -21,8 +23,18 @@ class Controller {
 		return $this->get;
 	}
 
+	private function _loadFile($fileName){
+		if(file_exists($fileName)){
+			include $fileName;
+			return true;
+		}		
+	}
+
 	public function loadModel($domainModel){
-		require_once APPLICATION_PATH . '/domain/models/' . $domainModel . '.php';
+		$fileName = APPLICATION_PATH . '/domain/models/' . $domainModel . '.php';
+		if(!$this->_loadFile($fileName)){
+			throw new \Core\Exception('Arquivo de modelo não encontrado. --> ' . $fileName);
+		}
 	}
 
 	public function setView($view){
@@ -35,11 +47,8 @@ class Controller {
 
 	public function runView(){
 		$fileName = APPLICATION_PATH . '/views/' . $this->view . '.php'; 
-		if(file_exists($fileName)){
-			include $fileName;
-			return true;
-		}else{
-			return false;
+		if(!$this->_loadFile($fileName)){
+			throw new \Core\Exception('Arquivo de visão não encontrado. --> ' . $fileName);
 		}
 	}
 }

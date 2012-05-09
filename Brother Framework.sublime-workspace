@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"_get",
+				"_getNewControllerFileName  (function)"
+			],
+			[
+				"_",
+				"_getControllerFilePath  (function)"
+			],
+			[
+				"confi",
+				"configs"
+			],
+			[
 				"domain",
 				"domainModel"
 			],
@@ -123,9 +135,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 173.0,
+		"height": 380.0,
 		"selected_items":
 		[
+			[
+				"todo",
+				"Show TODOs: Open files only"
+			],
 			[
 				"lorem",
 				"Snippet: lorem - HTML Kitchen sink"
@@ -188,34 +204,49 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/brotherframework/core/Controller.php",
+		"/C/xampp/htdocs/brotherframework/app/controllers/ServicosController.php",
+		"/C/xampp/htdocs/brotherframework/public/index.php",
+		"/C/xampp/htdocs/brotherframework/core/FrontController.php",
+		"/C/xampp/htdocs/brotherframework/app/views/servicos.php",
+		"/C/xampp/htdocs/brotherframework/app/views/header.php",
 		"/C/xampp/htdocs/brotherframework/tests/core/Controller.php",
+		"/C/xampp/htdocs/brotherframework/app/controllers/OrcamentoController.php",
+		"/C/xampp/htdocs/brotherframework/app/views/orcamento.php",
+		"/C/xampp/htdocs/brotherframework/app/controllers/ContatoController.php",
+		"/C/xampp/htdocs/brotherframework/app/views/contato.php",
+		"/C/xampp/htdocs/brotherframework/core/Controller.php",
+		"/C/xampp/htdocs/brotherframework/tests/phpunit.xml",
+		"/C/xampp/htdocs/brotherframework/app/views/index.php",
+		"/C/xampp/htdocs/brotherframework/app/views/test.php",
+		"/C/xampp/htdocs/brotherframework/tests/bootstrap.php",
+		"/C/xampp/htdocs/brotherframework/core/Exception.php",
+		"/C/xampp/htdocs/brotherframework/app/configs/config.php",
+		"/C/xampp/htdocs/brotherframework/app/controllers/ErrorController.php",
+		"/C/xampp/htdocs/brotherframework/app/views/error.php",
+		"/C/xampp/htdocs/projectmanager/application/controllers/ErrorController.php",
+		"/C/xampp/htdocs/brotherframework/app/views/404.php",
+		"/C/xampp/htdocs/brotherframework/app/controllers/NotFoundController.php",
+		"/C/xampp/htdocs/brotherframework/app/controllers/IndexController.php",
+		"/C/xampp/htdocs/brotherframework/app/controllers/JoaoController.php",
 		"/C/Documents and Settings/ROBS/Desktop/Eliane/284276_200755349974401_100001198112411_490841_2878478_n.jpg",
 		"/C/xampp/htdocs/simpletodo/index.php",
 		"/C/xampp/htdocs/simpletodo/Commands/ViewCommand.php",
 		"/C/xampp/htdocs/mercadomanager/includes/viewHelper.php",
 		"/C/xampp/htdocs/mercadomanager/index.php",
 		"/C/xampp/htdocs/mercadomanager/tests/ResultTest.php",
-		"/C/xampp/htdocs/brotherframework/tests/bootstrap.php",
-		"/C/xampp/htdocs/brotherframework/tests/phpunit.xml",
 		"/C/xampp/htdocs/brotherframework/public/docs/index.php",
 		"/C/xampp/htdocs/brotherframework/public/google-code-prettify/prettify.css",
 		"/C/xampp/htdocs/projectmanager/tests/phpunit.xml",
 		"/C/xampp/htdocs/facebookmonitor/tests/phpunit.xml",
-		"/C/xampp/htdocs/brotherframework/public/index.php",
 		"/C/Documents and Settings/ROBS/Application Data/Sublime Text 2/Packages/PHP/PHP.tmLanguage",
 		"/C/xampp/htdocs/brotherframework/public/css/style.css",
 		"/C/xampp/htdocs/brotherframework/app/views/home.php",
-		"/C/xampp/htdocs/brotherframework/app/views/header.php",
 		"/C/xampp/htdocs/brotherframework/app/views/institucional.php",
 		"/C/xampp/htdocs/brotherframework/app/views/footer.php",
 		"/C/xampp/htdocs/brotherframework/app/controllers/InstitucionalController.php",
 		"/C/xampp/htdocs/brotherframework/projeto.txt",
-		"/C/xampp/htdocs/brotherframework/app/controllers/IndexController.php",
-		"/C/xampp/htdocs/brotherframework/app/views/index.php",
 		"/C/xampp/htdocs/projectmanager/public/index.php",
 		"/C/xampp/htdocs/brotherframework/app/domain/models/User.php",
-		"/C/xampp/htdocs/brotherframework/app/configs/config.php",
 		"/C/xampp/htdocs/projectmanager/library/Bisna/Domain/Cliente.php",
 		"/C/xampp/htdocs/brotherframework/css/style.css",
 		"/C/xampp/htdocs/brotherframework/index.php",
@@ -296,7 +327,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			""
@@ -396,7 +427,7 @@
 		[
 			[
 				"",
-				"/C/Documents and Settings/ROBS/Desktop/Meus Posts/Meus Posts.sublime-project"
+				"/C/xampp/htdocs/performance/performance.sublime-project"
 			]
 		],
 		"width": 380.0
