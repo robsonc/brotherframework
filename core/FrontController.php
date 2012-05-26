@@ -3,6 +3,7 @@
 namespace Core;
 
 require_once 'Exception.php';
+require_once 'Request.php';
 
 /*
 @TODO: adicionar verificação de arquivo inexistente ao metodo run()
@@ -11,10 +12,12 @@ require_once 'Exception.php';
 class FrontController {
 
 	private $configs = array();
+	private $_request;
 	private $url;
 
 	public function __construct($configs){
 		$this->configs = $configs;
+		$this->_request = new Request();
 		//retorna a url requisitada
 		$this->url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 	}
@@ -32,10 +35,15 @@ class FrontController {
 		
 		require_once $this->_getControllerFilePath();
 		$refClass = new \ReflectionClass($this->_getControllerClassName());
-		$actionController = $refClass->newInstance();
+		$actionController = $refClass->newInstance($this->_request);
+		$actionController->init();
 		$actionController->indexAction();
 		$actionController->runView();
 
+	}
+
+	public function getRequest(){
+		return $this->_request;
 	}
 
 	private function _getControllerFileName(){

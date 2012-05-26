@@ -9,10 +9,16 @@ class Controller {
 	protected $view = 'index';
 	private $post;
 	private $get;
+	protected $_request;
 
-	public function __construct(){
+	public function __construct($request){
 		$this->post = $_POST;
 		$this->get = $_GET;
+		$this->_request = $request;
+	}
+
+	public function init(){
+
 	}
 
 	public function getPost(){
@@ -28,6 +34,10 @@ class Controller {
 			include $fileName;
 			return true;
 		}		
+	}
+
+	public function getRequest(){
+		return $this->_request;
 	}
 
 	public function loadModel($domainModel){

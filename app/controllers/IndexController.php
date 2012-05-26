@@ -9,8 +9,7 @@ class IndexController extends \Core\Controller {
 	public $view = 'home';
 	public $user;
 
-	public function __construct(){
-
+	public function init(){
 		$this->loadModel('User');
 		$this->user = new \Domain\Model\User();
 	}

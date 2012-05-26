@@ -29,8 +29,9 @@ try{
 	$fileName = APPLICATION_PATH . '/controllers/ErrorController.php';
 	$className = '\Controller\ErrorController';
 	require_once $fileName;
-	$controller = new $className();
+	$controller = new $className($frontController->getRequest());
 	$controller->setMessage($e->getMessage());
+	$controller->init();
 	$controller->indexAction();
 	$controller->runView();
 }

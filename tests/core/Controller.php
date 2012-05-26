@@ -1,13 +1,14 @@
 <?php
 
 require_once 'Controller.php';
+require_once 'Request.php';
 
 class ControllerTest extends PHPUnit_Framework_TestCase {
 	
 	public $object;
 
 	protected function setUp(){
-		$this->object = new \Core\Controller();
+		$this->object = new \Core\Controller(new \Core\Request());
 	}
 
 	public function testGetPost(){
